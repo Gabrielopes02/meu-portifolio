@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+.content {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  gap: 20px ;
+
+}
+.icons{
+    display: flex;
+    font-size: 12rem    ;
+}

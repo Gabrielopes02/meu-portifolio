@@ -1,5 +1,6 @@
 let repositorios = "";
 let projetos = "";
+let outros = new Array();
 const consumirProjetos = async () => {
   const url = "https://api.github.com/users/Gabrielopes02/repos";
 
@@ -26,7 +27,6 @@ const criarLista = (lista) => {
     "Relat-rio-da-Lua",
     "relat-rio-Pai",
   ];
-  console.log(lista);
   const ul = document.querySelector(".lista");
   lista.forEach((projetos) => {
     principaisProjetos.forEach((nomes) => {
@@ -37,9 +37,8 @@ const criarLista = (lista) => {
         const linha = document.createElement("p");
         const a = document.createElement("a");
         a.href = `https://gabrielopes02.github.io/${projetos.name}/`;
-        a.innerText = 'acessar'
-        a.target = '_blank'
-        console.log(a.href)
+        a.innerText = "acessar";
+        a.target = "_blank";
         newDiv.classList.add("divLi");
         linha.innerText = `${projetos.description}`;
         newImage.src = `imagens dos projeto/${projetos.name}.png`;
@@ -50,4 +49,5 @@ const criarLista = (lista) => {
       }
     });
   });
+  console.log(outros);
 };

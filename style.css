@@ -13,9 +13,9 @@ body {
   padding: 20px;
   gap: 10px;
   color: white;
-  background-color: black ;
+  background-color: black;
 }
-h2{
+h2 {
   color: rgb(10, 214, 10);
 }
 .content {
@@ -36,15 +36,14 @@ h2{
   display: flex;
   font-size: 12rem;
 }
-ul::-webkit-scrollbar{
+ul::-webkit-scrollbar {
   display: none;
 }
 
 li {
   list-style-type: none;
-
 }
-.divLi{
+.divLi {
   height: 100%;
   padding-top: 5px;
 }
@@ -56,6 +55,7 @@ img {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 5px;
   border: solid 1px rgb(10, 214, 10);
@@ -66,4 +66,16 @@ img {
   gap: 5px;
   overflow: auto;
   max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: rgb(10, 214, 10);
+  width: 70%;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  &:hover{
+    background-color: rgb(121, 243, 121);
+  }
 }

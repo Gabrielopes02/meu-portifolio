@@ -38,20 +38,19 @@ h2 {
 }
 ul::-webkit-scrollbar {
   display: none;
+  padding: 10px;
 }
 
 li {
   list-style-type: none;
 }
-.divLi {
-  height: 100%;
-  padding-top: 5px;
-}
+
 img {
   width: 400px;
 }
 .cards {
-  padding: 5px;
+  height: 100%;
+  padding: 15px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -75,7 +74,7 @@ a {
   text-align: center;
   color: black;
   border-radius: 10px;
-  &:hover{
+  &:hover {
     background-color: rgb(121, 243, 121);
   }
 }
